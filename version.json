@@ -4,7 +4,6 @@
   "minSupportedVersion": "2.7.3",
   "forceUpdate": false,
   "publishedAt": "2026-05-21T10:30:00Z",
-  "message": "有新版本可用，建議更新以獲得日期/時間 Quick Tag 與時區修正。",
   "download": {
     "label": "下載最新 USFA Extension",
     "url": "https://lyreco-my.sharepoint.com/:u:/r/personal/chchan_lyreco_com/Documents/Microsoft%20Teams%20%E8%81%8A%E5%A4%A9%E6%AA%94%E6%A1%88/USFA_CRM_Helper_v2.7.1.zip?csf=1&web=1&e=19DoSO"
@@ -13,4 +12,15 @@
     "releaseNotesUrl": "https://github.com/your-org/usfa-extension/releases/latest",
     "helpUrl": "https://your-internal-wiki/usfa-extension-update-guide"
   }
+  {
+  "message": "近1個月已更新：Bulk Edit/排程 Quick Tags、週末避讓、UTC 時區修正與 Open Opportunity 去重。",
+  "highlights": [
+    "2026-05-21：新增日期/時間 Quick Tag（明天/後天/下周一、±30m/±1h）",
+    "2026-05-21：多個日期欄位支援週末自動順延至週一",
+    "2026-05-21：修正 toISOString 導致日期倒退 1 日（時區問題）",
+    "2026-05-21：Personal Notes 的 Open Opportunity 區塊去重",
+    "2026-05-20：問卷與 Opp Bulk Edit 細節修正（Close Date/CNQ）",
+    "2026-05-19：Contact Lookup（Lead/Suspect 轉換）與 Opp Latest Note 強化"
+  ]
+}
 }
