@@ -11,8 +11,7 @@
   "links": {
     "releaseNotesUrl": "https://github.com/your-org/usfa-extension/releases/latest",
     "helpUrl": "https://your-internal-wiki/usfa-extension-update-guide"
-  }
-  {
+  },
   "message": "近1個月已更新：Bulk Edit/排程 Quick Tags、週末避讓、UTC 時區修正與 Open Opportunity 去重。",
   "highlights": [
     "2026-05-21：新增日期/時間 Quick Tag（明天/後天/下周一、±30m/±1h）",
@@ -22,5 +21,4 @@
     "2026-05-20：問卷與 Opp Bulk Edit 細節修正（Close Date/CNQ）",
     "2026-05-19：Contact Lookup（Lead/Suspect 轉換）與 Opp Latest Note 強化"
   ]
-}
 }
