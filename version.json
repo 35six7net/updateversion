@@ -12,7 +12,7 @@
     "releaseNotesUrl": "https://github.com/your-org/usfa-extension/releases/latest",
     "helpUrl": "https://your-internal-wiki/usfa-extension-update-guide"
   },
-  "message": "近1個月已更新：Bulk Edit/排程 Quick Tags、週末避讓、UTC 時區修正與 Open Opportunity 去重。",
+  "message": "近月重點更新：Bulk Edit/排程日期邏輯與週末避讓、問卷與 Notes 流程優化、Lead/Suspect Contact Lookup 命中改善、Quick Note Tags 擴充、並修復 Auto Schedule/Bulk Create 穩定性。<br>建議盡快更新以獲得完整修正。",
   "highlights": [
     "2026-05-21：新增日期/時間 Quick Tag（明天/後天/下周一、±30m/±1h）",
     "2026-05-21：多個日期欄位支援週末自動順延至週一",
