@@ -1,24 +1,22 @@
 {
   "channel": "prod",
-  "latestVersion": "2.7.3",
+  "latestVersion": "2.7.4",
   "minSupportedVersion": "2.7.3",
   "forceUpdate": false,
-  "publishedAt": "2026-05-21T10:30:00Z",
+  "publishedAt": "2026-07-01T09:45:00+08:00",
   "download": {
     "label": "下載最新 USFA Extension",
-    "url": "https://lyreco-my.sharepoint.com/:u:/r/personal/chchan_lyreco_com/Documents/Microsoft%20Teams%20%E8%81%8A%E5%A4%A9%E6%AA%94%E6%A1%88/USFA_CRM_Helper_v2.7.3.zip?csf=1&web=1&e=ebER8w"
+    "url": "https://lyreco-my.sharepoint.com/:u:/p/chchan/IQBzwhTor89oRL1Gv5co_AypAevF_8rhiiv6VvgU8ijVg0Q?e=t5xdKV"
   },
   "links": {
     "releaseNotesUrl": "https://github.com/your-org/usfa-extension/releases/latest",
     "helpUrl": "https://your-internal-wiki/usfa-extension-update-guide"
   },
-  "message": "近月重點更新：Bulk Edit/排程日期邏輯與週末避讓、問卷與 Notes 流程優化、Lead/Suspect Contact Lookup 命中改善、Quick Note Tags 擴充、並修復 Auto Schedule/Bulk Create 穩定性。<br>建議盡快更新以獲得完整修正。",
-"highlights": [
-  "Bulk Edit / Schedule 日期邏輯升級（含週末避讓、快速日期/時間 tag）",
-  "Opp 最新 Note 擷取準確度提升（createdon + UTC 比較）",
-  "Customer Need / Appointment Notes 問卷流程與預設值優化",
-  "Contact Lookup（Lead/Suspect）轉換成功率提升",
-  "修復 Auto Schedule / Bulk Create 關鍵穩定性問題",
-  "Personal Notes 的 Open Opportunity 摘要去重，避免重覆累積"
-]
+  "message": "v2.7.4 重點：Customer Search 混合 API 搜尋修正（Account/Contact/Lead 三實體）；Auto Schedule / Bulk Create 新增「避開公眾假期」（1823 API）。建議更新以獲得完整修正。",
+  "highlights": [
+    "🔍 Customer Search 混合 API 重構：Account / Contact / Lead 三實體並行搜尋，地址／name2／name3／district 等未索引欄位可命中",
+    "⚡ 移除 address1_composite 全表掃描、合併 searchquery 避免 429；偉業街等關鍵字由逾時改為 ~20–37s 有結果",
+    "🗓️ 避開香港公眾假期：Auto Schedule / Bulk Create 排程規則新增 checkbox（預設啟用）",
+    "🌐 1823 iCal API 整合：7 天快取 + 本地 tc.json fallback；跨日排程自動跳過週末及公眾假期"
+  ]
 }
