@@ -1,22 +1,26 @@
 {
   "channel": "prod",
-  "latestVersion": "2.7.8",
-  "minSupportedVersion": "2.7.3",
+  "latestVersion": "2.9.3",
+  "minSupportedVersion": "2.7.4",
   "forceUpdate": false,
-  "publishedAt": "2026-07-01T09:45:00+08:00",
+  "publishedAt": "2026-07-02T01:56:00+08:00",
   "download": {
     "label": "下載最新 USFA Extension",
-    "url": "https://lyreco-my.sharepoint.com/:u:/p/chchan/IQDZZQGvKVJWSpECmS6AR5tnAb4bbE3_Pyk4m5c6XeD2U0o?e=2oRPwn"
+    "url": "https://lyreco-my.sharepoint.com/:u:/p/chchan/IQDr4Ss7GJuqQqTMHO5ljApIAT4QFp59s-LP4VDcee1rktg?e=ejvOgE"
   },
   "links": {
     "releaseNotesUrl": "https://github.com/your-org/usfa-extension/releases/latest",
     "helpUrl": "https://your-internal-wiki/usfa-extension-update-guide"
   },
-  "message": "v2.7.4 重點：Customer Search 混合 API 搜尋修正（Account/Contact/Lead 三實體）；Auto Schedule / Bulk Create 新增「避開公眾假期」（1823 API）。建議更新以獲得完整修正。",
+  "message": "v2.9.3（6/28–7/2）：Customer Search 混合 API、排程避開公眾假期、Action Plan Auto Schedule、國家範圍搜尋、Contact Lookup Email 允許欄等多項更新與修正。",
   "highlights": [
-    "🔍 Customer Search 混合 API 重構：Account / Contact / Lead 三實體並行搜尋，地址／name2／name3／district 等未索引欄位可命中",
-    "⚡ 移除 address1_composite 全表掃描、合併 searchquery 避免 429；偉業街等關鍵字由逾時改為 ~20–37s 有結果",
-    "🗓️ 避開香港公眾假期：Auto Schedule / Bulk Create 排程規則新增 checkbox（預設啟用）",
-    "🌐 1823 iCal API 整合：7 天快取 + 本地 tc.json fallback；跨日排程自動跳過週末及公眾假期"
+    "【7/1】🔍 Customer Search 混合 API：Account / Contact / Lead 三實體 Relevance + 補充 contains；合併 searchquery 避免 429；移除 composite 全表掃描逾時",
+    "【7/1】🗓️ Auto Schedule / Bulk Create 新增「避開公眾假期」（1823 API + tc.json fallback），與避開週末一併套用",
+    "【7/1】📋 Action Plan Auto Schedule：Action Plan 頁或手動輸入 AP 編號 → 讀取 Scheduled appointments 排程；Sales Rep 改以 owningteam.lyr_salesrepid 篩選",
+    "【7/1】👥 Action Plan Owning Team 接管：非本人 Sales Rep 的 appointment 可改歸自己的 Team 再排程；手動輸入改用現代化對話框",
+    "【7/1–7/2】🌍 Contact Lookup「僅限我的國家」：登入者 BU 偵測 Hong Kong；SAP ID / Partner 展開同步過濾；修正 lyr_countries 用 lyr_name 查詢",
+    "【7/2】🌍 Account Search「僅限我的國家」：Account / Lead / Contact OData、地址種子、補充 contains 均伺服器端過濾國家",
+    "【7/2】🔧 修正國家模式 Relevance Search 回 0 筆（Filter 不支援 _lyr_countryid_value lookup）→ 改走 OData startswith/contains",
+    "【7/2】📧 Contact Lookup 新增「Email 允許」欄（donotemail → Allow / Do Not Allow），表格綠/紅標示，CSV 同步"
   ]
 }
