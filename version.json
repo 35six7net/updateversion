@@ -1,7 +1,7 @@
 {
   "channel": "prod",
   "latestVersion": "2.9.3",
-  "minSupportedVersion": "2.7.4",
+  "minSupportedVersion": "2.9.3",
   "forceUpdate": false,
   "publishedAt": "2026-07-02T01:56:00+08:00",
   "download": {
