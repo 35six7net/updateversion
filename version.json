@@ -1,26 +1,23 @@
 {
   "channel": "prod",
-  "latestVersion": "2.9.3",
-  "minSupportedVersion": "2.9.3",
+  "latestVersion": "2.9.4",
+  "minSupportedVersion": "2.7.4",
   "forceUpdate": false,
-  "publishedAt": "2026-07-02T01:56:00+08:00",
+  "publishedAt": "2026-07-16T14:40:00+08:00",
   "download": {
     "label": "下載最新 USFA Extension",
-    "url": "https://lyreco-my.sharepoint.com/:u:/p/chchan/IQDr4Ss7GJuqQqTMHO5ljApIAT4QFp59s-LP4VDcee1rktg?e=ejvOgE"
+    "url": "https://lyreco-my.sharepoint.com/:u:/p/chchan/IQA4ejZ3DoxnT7Pqe_bnMa7OAT_PW5-cSZmTWeb-Y0fziRg?e=HQNY0q"
   },
   "links": {
     "releaseNotesUrl": "https://github.com/your-org/usfa-extension/releases/latest",
     "helpUrl": "https://your-internal-wiki/usfa-extension-update-guide"
   },
-  "message": "v2.9.3（6/28–7/2）：Customer Search 混合 API、排程避開公眾假期、Action Plan Auto Schedule、國家範圍搜尋、Contact Lookup Email 允許欄等多項更新與修正。",
+  "message": "v2.9.4（7/15–7/16）：Auto Schedule 路線地圖、偏遠記錄排最後一日、大跳硬斷、座標／地區品質修正、search term 衝突防護等多項更新。",
   "highlights": [
-    "【7/1】🔍 Customer Search 混合 API：Account / Contact / Lead 三實體 Relevance + 補充 contains；合併 searchquery 避免 429；移除 composite 全表掃描逾時",
-    "【7/1】🗓️ Auto Schedule / Bulk Create 新增「避開公眾假期」（1823 API + tc.json fallback），與避開週末一併套用",
-    "【7/1】📋 Action Plan Auto Schedule：Action Plan 頁或手動輸入 AP 編號 → 讀取 Scheduled appointments 排程；Sales Rep 改以 owningteam.lyr_salesrepid 篩選",
-    "【7/1】👥 Action Plan Owning Team 接管：非本人 Sales Rep 的 appointment 可改歸自己的 Team 再排程；手動輸入改用現代化對話框",
-    "【7/1–7/2】🌍 Contact Lookup「僅限我的國家」：登入者 BU 偵測 Hong Kong；SAP ID / Partner 展開同步過濾；修正 lyr_countries 用 lyr_name 查詢",
-    "【7/2】🌍 Account Search「僅限我的國家」：Account / Lead / Contact OData、地址種子、補充 contains 均伺服器端過濾國家",
-    "【7/2】🔧 修正國家模式 Relevance Search 回 0 筆（Filter 不支援 _lyr_countryid_value lookup）→ 改走 OData startswith/contains",
-    "【7/2】📧 Contact Lookup 新增「Email 允許」欄（donotemail → Allow / Do Not Allow），表格綠/紅標示，CSV 同步"
+    "【7/15】🗺️ Auto Schedule 路線地圖（香港政府地圖 + 步行導航 + HKeMobility 輔助）；排程預覽確認後才寫入 CRM",
+    "【7/15】🚶 進階參數場景 tag（步行 2 / 搭車 6 / 駕車 12 km）；偏遠記錄可選「排喺最後一日」",
+    "【7/15–7/16】🧭 低信心 geocode 座標跨區檢查（地區欄 + 地址文字）；CRM 地區與地址衝突防護 + 可疑清單",
+    "【7/15】🛣️ 修正 Queen's Road 街道截斷為 S ROAD；大區欄填細區（e.g. 長沙灣）自動識別",
+    "【7/16】🧭 大跳硬斷（可調 km）：單次移動超門檻即跨日，令每日行程更集中"
   ]
 }
