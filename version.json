@@ -1,23 +1,22 @@
 {
   "channel": "prod",
-  "latestVersion": "2.9.4",
+  "latestVersion": "2.9.5",
   "minSupportedVersion": "2.7.4",
   "forceUpdate": false,
-  "publishedAt": "2026-07-16T14:40:00+08:00",
+  "publishedAt": "2026-08-05T14:05:05+08:00",
   "download": {
     "label": "下載最新 USFA Extension",
-    "url": "https://lyreco-my.sharepoint.com/:u:/p/chchan/IQA4ejZ3DoxnT7Pqe_bnMa7OAT_PW5-cSZmTWeb-Y0fziRg?e=HQNY0q"
+    "url": "https://lyreco-my.sharepoint.com/:u:/r/personal/chchan_lyreco_com/Documents/Microsoft%20Teams%20%E8%81%8A%E5%A4%A9%E6%AA%94%E6%A1%88/USFA_CRM_Helper_v2.9.5.zip?csf=1&web=1&e=ebER8w"
   },
   "links": {
     "releaseNotesUrl": "https://github.com/your-org/usfa-extension/releases/latest",
     "helpUrl": "https://your-internal-wiki/usfa-extension-update-guide"
   },
-  "message": "v2.9.4（7/15–7/16）：Auto Schedule 路線地圖、偏遠記錄排最後一日、大跳硬斷、座標／地區品質修正、search term 衝突防護等多項更新。",
+  "message": "v2.9.5（8/4–8/5）：Bulk Suspect 建立／編輯雙模式、Suspect ID／AG Grid 勾選讀取，以及 Auto Schedule 自訂 exclusion dates 與加入其他 Appointment。",
   "highlights": [
-    "【7/15】🗺️ Auto Schedule 路線地圖（香港政府地圖 + 步行導航 + HKeMobility 輔助）；排程預覽確認後才寫入 CRM",
-    "【7/15】🚶 進階參數場景 tag（步行 2 / 搭車 6 / 駕車 12 km）；偏遠記錄可選「排喺最後一日」",
-    "【7/15–7/16】🧭 低信心 geocode 座標跨區檢查（地區欄 + 地址文字）；CRM 地區與地址衝突防護 + 可疑清單",
-    "【7/15】🛣️ 修正 Queen's Road 街道截斷為 S ROAD；大區欄填細區（e.g. 長沙灣）自動識別",
-    "【7/16】🧭 大跳硬斷（可調 km）：單次移動超門檻即跨日，令每日行程更集中"
+    "【8/5】✏️ Bulk Suspect 新增建立／編輯雙模式，可用 SP-... Suspect ID 讀取 Active Lead",
+    "【8/5】☑️ 支援從 Dynamics AG Grid 已勾選列取得 Lead GUID，再由 CRM 讀取完整資料及批量 PATCH",
+    "【8/4】🚫 Auto Schedule／Bulk Create Appointment 支援自訂 exclusion dates／日期範圍並同步儲存",
+    "【8/4】➕ Auto Schedule 可加入現有 Appointment，或由 Account／Suspect 建立 Appointment 後一併排程"
   ]
 }
