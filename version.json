@@ -17,11 +17,5 @@
     "【9/1】🏢 Order Details 顯示 USFA Partner Name 及 SAP ID",
     "【9/1】🔗 新增一鍵開啟 USFA CRM Partner Account link",
     "【9/1】🔎 手動輸入 Order Number 亦會從 salesorder 反查 Partner",
-    "【9/1】🇪🇸 Spain 使用 SPSP/CTSP/ENSP，修正 ESES/ENES 404",
-    "【9/1】🌍 保留 HK_、FR_、DE_、BE_ 等 CRM 地區前綴，自動選擇 Lyreco locale",
-    "【9/1】🔁 Belgium、Switzerland 等多語地區支援多 locale fallback",
-    "【9/1】🧪 FR_171507846 實測以 FRFR 成功返回 Order Details JSON",
-    "【9/1】🛡️ 檢查 HTTP Content-Type，不再將 HTML 錯誤頁當作 JSON",
-    "【9/1】🔐 Proof of Delivery 需要 Webshop 登入狀態，本版不包含 POD 查詢或下載"
-  ]
+
 }
