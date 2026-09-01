@@ -1,24 +1,27 @@
 {
   "channel": "prod",
-  "latestVersion": "2.9.8",
+  "latestVersion": "2.9.12",
   "minSupportedVersion": "2.7.4",
   "forceUpdate": false,
-  "publishedAt": "2026-08-30T19:06:21+08:00",
+  "publishedAt": "2026-09-01T23:35:14+08:00",
   "download": {
     "label": "下載最新 USFA Extension",
-    "url": "https://lyreco-my.sharepoint.com/:u:/p/chchan/IQBjlpcaQ4RJRKdtrIpoYFoKAXzg_frEh-NgyvzLVQNH91M?e=7s4jaT"
+    "url": "https://lyreco-my.sharepoint.com/:u:/p/chchan/IQDx5SZ3r2VASYcQAq1-wakBAS2z5yTAvCu6cW35yoiANeQ?e=mg6rWa"
   },
   "links": {
     "releaseNotesUrl": "https://github.com/your-org/usfa-extension/releases/latest",
     "helpUrl": "https://your-internal-wiki/usfa-extension-update-guide"
   },
-  "message": "v2.9.8（8/30）：正式拆分 Notes／Appointment 問卷與 Opportunity Customer Need 專用問卷，修正所有 Notes 入口錯誤共用 Customer Need modal。",
+  "message": "v2.9.12（9/1）：Lyreco Order Details modal 新增 USFA Partner Name、SAP ID 及 CRM Partner link。",
   "highlights": [
-    "【8/30】📋 .usfa-target-questionnaire 及所有 Appointment Notes 入口改用獨立 Notes 問卷",
-    "【8/30】🎯 Opportunity Customer Need 保留獨立需求問卷、考慮因素及產品要求 Tags",
-    "【8/30】🏷️ Customer Need 新增 Brand、Pen Type、Tip Size、Colour 及 Flexibility 分組 Tags",
-    "【8/30】🔎 新增 Price、Quality、Delivery、Service 及 Centralized Ordering 考慮因素 Tags",
-    "【8/30】🎯 Proposed Solution 新增方案摘要、Sales Action Tags、下一步及 Follow-up 日期產生器",
-    "【8/30】🧾 小型報價 subtotal／Total 加入 database packageUnit：Qty × Package Unit × Unit Price"
+    "【9/1】🏢 Order Details 顯示 USFA Partner Name 及 SAP ID",
+    "【9/1】🔗 新增一鍵開啟 USFA CRM Partner Account link",
+    "【9/1】🔎 手動輸入 Order Number 亦會從 salesorder 反查 Partner",
+    "【9/1】🇪🇸 Spain 使用 SPSP/CTSP/ENSP，修正 ESES/ENES 404",
+    "【9/1】🌍 保留 HK_、FR_、DE_、BE_ 等 CRM 地區前綴，自動選擇 Lyreco locale",
+    "【9/1】🔁 Belgium、Switzerland 等多語地區支援多 locale fallback",
+    "【9/1】🧪 FR_171507846 實測以 FRFR 成功返回 Order Details JSON",
+    "【9/1】🛡️ 檢查 HTTP Content-Type，不再將 HTML 錯誤頁當作 JSON",
+    "【9/1】🔐 Proof of Delivery 需要 Webshop 登入狀態，本版不包含 POD 查詢或下載"
   ]
 }
