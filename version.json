@@ -1,22 +1,39 @@
 {
   "channel": "prod",
-  "latestVersion": "2.9.12",
+  "latestVersion": "2.9.16",
   "minSupportedVersion": "2.7.4",
   "forceUpdate": false,
-  "publishedAt": "2026-09-01T23:35:14+08:00",
+  "publishedAt": "2026-09-02T00:00:00+08:00",
   "download": {
     "label": "下載最新 USFA Extension",
-    "url": "https://lyreco-my.sharepoint.com/:u:/p/chchan/IQDx5SZ3r2VASYcQAq1-wakBAS2z5yTAvCu6cW35yoiANeQ?e=UpnxNs"
+    "url": "https://lyreco-my.sharepoint.com/:u:/p/chchan/IQDaFVEDSkcER4jtozb3p4aSATp1YAsCeR73mfZkFkHQIK0?e=8AzU5D"
   },
   "links": {
     "releaseNotesUrl": "https://github.com/your-org/usfa-extension/releases/latest",
     "helpUrl": "https://your-internal-wiki/usfa-extension-update-guide"
   },
-  "message": "v2.9.12（9/1）：Lyreco Order Details modal 新增 USFA Partner Name、SAP ID 及 CRM Partner link。",
+  "message": "v2.9.16（9/2）：用 Action Plan 排程支援列表多選及多項編號／GUID／URL 輸入，合併後一次選擇 Sales Rep。",
   "highlights": [
+    "【9/2】🗂️ Action Plan 列表可勾選多個 Plan 合併排程",
+    "【9/2】📝 支援多行、逗號或分號輸入多個 AP 編號／GUID／URL",
+    "【9/2】🧹 Action Plan 及 Scheduled Appointment 自動去重",
+    "【9/2】👥 合併後只需選擇一次 Sales Rep",
+    "【9/2】👤 Bulk Create Appointment 加入目前登入者作 Organizer",
+    "【9/2】✅ 實測確認 Timeline 頭像取自 Organizer，不是 Team Owner",
+    "【9/2】🔄 Bulk Create、Auto Schedule、Account 及 Suspect 共用修正",
+    "【9/2】🏢 保留原生 workflow 指派的 Territory Team Owner",
+    "【9/2】📅 Bulk Create Appointment 對齊原生 Sales Visit 必填欄位",
+    "【9/2】👥 每筆 Sales Visit 保證至少一位 Required Attendee",
+    "【9/2】🔧 修正 Contact parent Account 的 OData lookup 欄位",
+    "【9/2】✉️ 新增 Mail invitation body",
     "【9/1】🏢 Order Details 顯示 USFA Partner Name 及 SAP ID",
     "【9/1】🔗 新增一鍵開啟 USFA CRM Partner Account link",
     "【9/1】🔎 手動輸入 Order Number 亦會從 salesorder 反查 Partner",
+    "【9/1】🇪🇸 Spain 使用 SPSP/CTSP/ENSP，修正 ESES/ENES 404",
+    "【9/1】🌍 保留 HK_、FR_、DE_、BE_ 等 CRM 地區前綴，自動選擇 Lyreco locale",
+    "【9/1】🔁 Belgium、Switzerland 等多語地區支援多 locale fallback",
+    "【9/1】🧪 FR_171507846 實測以 FRFR 成功返回 Order Details JSON",
+    "【9/1】🛡️ 檢查 HTTP Content-Type，不再將 HTML 錯誤頁當作 JSON",
+    "【9/1】🔐 Proof of Delivery 需要 Webshop 登入狀態，本版不包含 POD 查詢或下載"
   ]
-
 }
